@@ -78,15 +78,16 @@ After install, the app works offline for cached pages and assets (service worker
 |------|-------------|
 | [`beastwars-tcg/`](beastwars-tcg/) | React + Vite **PWA** (collection, deck builder, battle vs AI) |
 | [`index.html`](index.html) | Standalone **Beastdex** (open in any browser) |
-| [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) | Auto-deploy web app to GitHub Pages |
+| [`docs/github-pages.md`](docs/github-pages.md) | Host / install as web app |
+| [`beastwars-tcg/src/data/sets/`](beastwars-tcg/src/data/sets/) | Expansion card libraries (JSON) |
 | [`LICENSE`](LICENSE) | MIT License |
 
 ### App features
 
-- **Home** — landing, game modes, install tips  
-- **Collection** — 22 Beastdex fighters  
-- **Deck Builder** — 6-card decks (`localStorage`)  
-- **Battle** — duel Predacon AI  
+- **Home** — landing, game modes, expansion catalog  
+- **Collection** — 100+ fighters across 6 expansions  
+- **Deck Builder** — faction & set presets (`localStorage`)  
+- **Battle** — duel AI villains  
 
 ### How to play
 

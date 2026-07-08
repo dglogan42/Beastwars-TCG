@@ -36,9 +36,20 @@ npm run preview       # serve dist/
 
 ## Features
 
-- Collection, Deck Builder, Battle vs AI  
-- Offline cache via service worker  
-- Install prompt + iOS home-screen instructions  
+- **6 expansion libraries** — BW01, G1A, G1D, BM01, ARM01, ANI01 (100+ cards)  
+- Collection filters by set & faction; deck presets per line  
+- Battle vs AI · offline PWA · install on mobile/desktop  
+
+## Expansions
+
+| Code | Set | Roster |
+|------|-----|--------|
+| BW01 | Beast Wars: Spark of Earth | Maximals / Predacons |
+| G1A | G1 Autobot Vanguard | Optimus, Bee, Jazz, Grimlock… |
+| G1D | G1 Decepticon Empire | Megatron, Starscream, Soundwave… |
+| BM01 | Beast Machines | Reformatted Maximals / Vehicons |
+| ARM01 | Armada: Powerlinx Rising | Autobots, Decepticons, Mini-Cons |
+| ANI01 | Animated: Detroit Defenders | Animated Autobots & Cons |
 
 ## Credits
 
