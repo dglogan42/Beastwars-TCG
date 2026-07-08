@@ -4,7 +4,7 @@ Fan-made **Beast Wars: Transformers** trading card game — a **progressive web 
 
 **Repo:** [github.com/dglogan42/Beastwars-TCG](https://github.com/dglogan42/Beastwars-TCG)  
 **Web app (GitHub Pages):** [dglogan42.github.io/Beastwars-TCG/](https://dglogan42.github.io/Beastwars-TCG/)  
-*(Enable Pages → GitHub Actions after the first deploy workflow succeeds.)*
+*(See [docs/github-pages.md](docs/github-pages.md) to enable hosting.)*
 
 ## Platforms
 
