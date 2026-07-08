@@ -2,11 +2,10 @@ import { Link } from 'react-router-dom';
 import {
   siteSections,
   featuredCards,
-  expansions,
   pageMeta,
   tokens,
 } from '../data/tcgl';
-import { CARDS } from '../data/cards';
+import { CARDS, EXPANSIONS, expansionStats } from '../data/cards';
 import { TradingCard } from '../components/TradingCard';
 import { asset } from '../utils/assets';
 import './pages.css';
@@ -15,7 +14,10 @@ import './home-tcgl.css';
 export function Home() {
   const { about, gameModes, battlePass, collection, getStarted, systemRequirements } =
     siteSections;
-  const featuredBw = [1, 11, 5, 16, 10, 15].map((id) => CARDS.find((c) => c.id === id));
+  const featuredBw = [1, 11, 100, 200, 300, 400, 500, 114]
+    .map((id) => CARDS.find((c) => c.id === id))
+    .filter(Boolean);
+  const setStats = expansionStats();
 
   return (
     <div className="page-home">
@@ -62,7 +64,9 @@ export function Home() {
             <article className="angled-box">
               <div className="angled-box__inner">
                 <h3>Standard format</h3>
-                <p>Full Beastdex legal list · {CARDS.length} fighters</p>
+                <p>
+                  {CARDS.length} fighters · {EXPANSIONS.length} expansion sets
+                </p>
               </div>
             </article>
             <article className="angled-box">
@@ -153,18 +157,32 @@ export function Home() {
         </div>
       </section>
 
-      {/* Expansions strip from scraped nav */}
-      <section className="tcgl-section tcgl-section--expansions">
+      {/* Transformers expansion libraries */}
+      <section className="tcgl-section tcgl-section--expansions" id="expansions">
         <div className="tcgl-wrap">
-          <h2 className="tcgl-h">Recent Expansions</h2>
+          <h2 className="tcgl-h">Expansion Sets</h2>
           <p className="tcgl-body">
-            Expansion names scraped from the Pokémon TCG Live navigation source file:
+            Full character libraries from across Transformers continuity — each set is legal for
+            constructed decks and filterable in Collection.
           </p>
           <ul className="expansion-list">
-            {expansions.map((e) => (
-              <li key={e}>{e}</li>
+            {setStats.map((e) => (
+              <li key={e.code} style={{ borderLeftColor: e.color }}>
+                <strong>
+                  {e.code} · {e.name}
+                </strong>
+                <br />
+                <span style={{ fontSize: '0.85rem', color: '#666' }}>
+                  {e.count} cards · {e.era} ({e.year}) · {e.legendaries} legendary
+                </span>
+              </li>
             ))}
           </ul>
+          <div style={{ marginTop: 20, textAlign: 'center' }}>
+            <Link className="btn-tcgl btn-tcgl--red" to="/collection">
+              Browse all libraries
+            </Link>
+          </div>
         </div>
       </section>
 

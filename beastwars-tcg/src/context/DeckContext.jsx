@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { DECK_SIZE, defaultDeck } from '../data/cards';
 
-const STORAGE_KEY = 'bw-tcg-deck-v1';
+const STORAGE_KEY = 'bw-tcg-deck-v2';
 const DeckContext = createContext(null);
 
 export function DeckProvider({ children }) {

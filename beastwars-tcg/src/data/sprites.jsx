@@ -212,6 +212,213 @@ const paths = {
       <ellipse cx="62" cy="74" rx="4" ry="8" fill="#1a1a22" />
     </>
   ),
+  truck: (
+    <>
+      <rect x="12" y="42" width="52" height="28" rx="4" fill="#c62828" />
+      <rect x="52" y="36" width="32" height="34" rx="3" fill="#e53935" />
+      <rect x="58" y="42" width="18" height="12" rx="2" fill="#90caf9" />
+      <circle cx="28" cy="74" r="8" fill="#212121" />
+      <circle cx="68" cy="74" r="8" fill="#212121" />
+      <circle cx="28" cy="74" r="3" fill="#9e9e9e" />
+      <circle cx="68" cy="74" r="3" fill="#9e9e9e" />
+    </>
+  ),
+  car: (
+    <>
+      <path d="M14 58h72l-8-16H28z" fill="#f9a825" />
+      <path d="M30 42h36l8 12H24z" fill="#ffecb3" />
+      <rect x="34" y="44" width="12" height="8" rx="1" fill="#4fc3f7" />
+      <rect x="52" y="44" width="12" height="8" rx="1" fill="#4fc3f7" />
+      <circle cx="28" cy="62" r="7" fill="#212121" />
+      <circle cx="72" cy="62" r="7" fill="#212121" />
+    </>
+  ),
+  van: (
+    <>
+      <rect x="16" y="36" width="68" height="36" rx="4" fill="#eceff1" />
+      <rect x="58" y="42" width="20" height="14" rx="2" fill="#90caf9" />
+      <rect x="20" y="42" width="14" height="10" rx="1" fill="#ef5350" />
+      <circle cx="30" cy="74" r="7" fill="#212121" />
+      <circle cx="70" cy="74" r="7" fill="#212121" />
+    </>
+  ),
+  jeep: (
+    <>
+      <rect x="18" y="44" width="64" height="24" rx="3" fill="#7cb342" />
+      <rect x="50" y="38" width="22" height="12" rx="2" fill="#aed581" />
+      <circle cx="32" cy="70" r="8" fill="#212121" />
+      <circle cx="70" cy="70" r="8" fill="#212121" />
+      <path d="M22 44v-8h10" stroke="#558b2f" strokeWidth="3" fill="none" />
+    </>
+  ),
+  jet: (
+    <>
+      <path d="M50 18l10 50H40z" fill="#90caf9" />
+      <path d="M20 55l30-8 30 8-30 10z" fill="#42a5f5" />
+      <path d="M44 68h12l4 14h-20z" fill="#1565c0" />
+      <circle cx="50" cy="40" r="3" fill="#fff" />
+    </>
+  ),
+  tank: (
+    <>
+      <rect x="18" y="40" width="64" height="28" rx="4" fill="#78909c" />
+      <rect x="30" y="28" width="40" height="16" rx="3" fill="#546e7a" />
+      <rect x="62" y="30" width="28" height="6" rx="2" fill="#37474f" />
+      <circle cx="30" cy="72" r="6" fill="#263238" />
+      <circle cx="50" cy="74" r="6" fill="#263238" />
+      <circle cx="70" cy="72" r="6" fill="#263238" />
+    </>
+  ),
+  gun: (
+    <>
+      <rect x="20" y="44" width="55" height="14" rx="3" fill="#90a4ae" />
+      <rect x="68" y="40" width="18" height="22" rx="2" fill="#546e7a" />
+      <rect x="14" y="48" width="12" height="8" rx="1" fill="#37474f" />
+      <circle cx="40" cy="51" r="3" fill="#263238" />
+    </>
+  ),
+  cassette: (
+    <>
+      <rect x="18" y="30" width="64" height="42" rx="4" fill="#1565c0" />
+      <circle cx="36" cy="51" r="10" fill="#0d47a1" />
+      <circle cx="64" cy="51" r="10" fill="#0d47a1" />
+      <circle cx="36" cy="51" r="4" fill="#90caf9" />
+      <circle cx="64" cy="51" r="4" fill="#90caf9" />
+      <rect x="44" y="46" width="12" height="10" fill="#0d47a1" />
+    </>
+  ),
+  camera: (
+    <>
+      <rect x="20" y="34" width="60" height="36" rx="4" fill="#607d8b" />
+      <circle cx="50" cy="52" r="14" fill="#37474f" />
+      <circle cx="50" cy="52" r="8" fill="#90caf9" />
+      <rect x="62" y="38" width="10" height="6" fill="#ffcc80" />
+    </>
+  ),
+  combiner: (
+    <>
+      <rect x="38" y="12" width="24" height="20" rx="3" fill="#66bb6a" />
+      <rect x="28" y="32" width="44" height="36" rx="4" fill="#43a047" />
+      <rect x="12" y="36" width="16" height="28" rx="2" fill="#2e7d32" />
+      <rect x="72" y="36" width="16" height="28" rx="2" fill="#2e7d32" />
+      <rect x="32" y="68" width="14" height="20" rx="2" fill="#1b5e20" />
+      <rect x="54" y="68" width="14" height="20" rx="2" fill="#1b5e20" />
+    </>
+  ),
+  shuttle: (
+    <>
+      <path d="M50 12l22 56H28z" fill="#e3f2fd" />
+      <path d="M30 68h40l-8 16H38z" fill="#90caf9" />
+      <rect x="44" y="36" width="12" height="16" rx="2" fill="#42a5f5" />
+      <path d="M20 50l14 8-4 12z" fill="#1565c0" />
+      <path d="M80 50l-14 8 4 12z" fill="#1565c0" />
+    </>
+  ),
+  crane: (
+    <>
+      <rect x="30" y="60" width="40" height="18" rx="2" fill="#9ccc65" />
+      <rect x="46" y="20" width="8" height="42" fill="#7cb342" />
+      <path d="M50 22h30l-6 8H50z" fill="#558b2f" />
+      <circle cx="38" cy="80" r="5" fill="#33691e" />
+      <circle cx="62" cy="80" r="5" fill="#33691e" />
+    </>
+  ),
+  loader: (
+    <>
+      <rect x="28" y="44" width="48" height="24" rx="3" fill="#8bc34a" />
+      <path d="M16 52h16l8 12H20z" fill="#689f38" />
+      <circle cx="38" cy="72" r="7" fill="#33691e" />
+      <circle cx="64" cy="72" r="7" fill="#33691e" />
+    </>
+  ),
+  bat: (
+    <>
+      <path d="M20 48c12-20 28-20 30-8 2-12 18-12 30 8-14 4-22 8-30 8s-16-4-30-8z" fill="#5e35b1" />
+      <ellipse cx="50" cy="52" rx="12" ry="14" fill="#7e57c2" />
+      <circle cx="46" cy="50" r="2" fill="#fff" />
+      <circle cx="54" cy="50" r="2" fill="#fff" />
+    </>
+  ),
+  plant: (
+    <>
+      <path d="M50 80V40" stroke="#2e7d32" strokeWidth="6" />
+      <ellipse cx="38" cy="36" rx="14" ry="20" fill="#66bb6a" />
+      <ellipse cx="62" cy="32" rx="14" ry="18" fill="#81c784" />
+      <ellipse cx="50" cy="48" rx="10" ry="14" fill="#a5d6a7" />
+      <circle cx="50" cy="70" r="10" fill="#5d4037" />
+    </>
+  ),
+  dragon: (
+    <>
+      <path d="M24 60c12-24 40-28 56-10 4 10 0 24-14 28-18 6-36 2-42-8z" fill="#7e57c2" />
+      <path d="M70 44c12-2 20 6 18 16l-12 2c0-6-4-10-10-10z" fill="#9575cd" />
+      <path d="M78 52l14 2-2 6-12-2z" fill="#b39ddb" />
+      <circle cx="84" cy="50" r="2.5" fill="#ffeb3b" />
+      <path d="M30 70l-4 16M44 72l2 16M56 70l6 14" stroke="#4a148c" strokeWidth="5" strokeLinecap="round" />
+    </>
+  ),
+  cycle: (
+    <>
+      <circle cx="30" cy="62" r="14" fill="#212121" />
+      <circle cx="70" cy="62" r="14" fill="#212121" />
+      <circle cx="30" cy="62" r="6" fill="#9e9e9e" />
+      <circle cx="70" cy="62" r="6" fill="#9e9e9e" />
+      <path d="M30 58h28l12-16h8" stroke="#ef6c00" strokeWidth="5" fill="none" />
+      <path d="M42 42l8 16" stroke="#ff9800" strokeWidth="4" />
+    </>
+  ),
+  drone: (
+    <>
+      <ellipse cx="50" cy="48" rx="22" ry="14" fill="#7e57c2" />
+      <circle cx="50" cy="48" r="8" fill="#b39ddb" />
+      <path d="M20 48h10M70 48h10" stroke="#9575cd" strokeWidth="4" />
+      <circle cx="18" cy="48" r="4" fill="#e1bee7" />
+      <circle cx="82" cy="48" r="4" fill="#e1bee7" />
+    </>
+  ),
+  heli: (
+    <>
+      <rect x="30" y="44" width="40" height="18" rx="4" fill="#7e57c2" />
+      <path d="M50 44V28" stroke="#5e35b1" strokeWidth="3" />
+      <path d="M18 28h64" stroke="#b39ddb" strokeWidth="4" strokeLinecap="round" />
+      <path d="M66 62h16l-4 10h-12z" fill="#4527a0" />
+      <circle cx="40" cy="70" r="5" fill="#212121" />
+    </>
+  ),
+  carrier: (
+    <>
+      <rect x="10" y="48" width="80" height="20" rx="3" fill="#0277bd" />
+      <rect x="20" y="36" width="50" height="14" rx="2" fill="#0288d1" />
+      <rect x="60" y="28" width="8" height="20" fill="#01579b" />
+      <path d="M14 68h72" stroke="#01579b" strokeWidth="4" />
+    </>
+  ),
+  minicon: (
+    <>
+      <circle cx="50" cy="48" r="22" fill="#ff9800" />
+      <circle cx="50" cy="48" r="12" fill="#ffe0b2" />
+      <rect x="42" y="40" width="6" height="6" fill="#e65100" />
+      <rect x="52" y="40" width="6" height="6" fill="#e65100" />
+      <path d="M44 56h12" stroke="#e65100" strokeWidth="2" />
+    </>
+  ),
+  bomber: (
+    <>
+      <ellipse cx="50" cy="52" rx="28" ry="16" fill="#558b2f" />
+      <path d="M22 52l-12 8 4-8-4-8z" fill="#33691e" />
+      <path d="M78 52l12 8-4-8 4-8z" fill="#33691e" />
+      <circle cx="58" cy="48" r="4" fill="#a5d6a7" />
+    </>
+  ),
+  key: (
+    <>
+      <circle cx="40" cy="42" r="16" fill="#ec407a" />
+      <circle cx="40" cy="42" r="8" fill="#f8bbd0" />
+      <rect x="52" y="38" width="28" height="8" rx="2" fill="#f48fb1" />
+      <rect x="70" y="46" width="6" height="12" fill="#f48fb1" />
+      <rect x="62" y="46" width="6" height="8" fill="#f48fb1" />
+    </>
+  ),
 };
 
 export function Sprite({ name, className }) {

@@ -284,6 +284,50 @@
   margin-bottom: 16px;
 }
 
+.expansion-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.exp-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid #ddd;
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: #323232;
+  transition: 0.15s;
+}
+
+.exp-chip strong {
+  font-family: Orbitron, Exo, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+.exp-chip__count {
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 999px;
+  padding: 1px 7px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.exp-chip.is-active .exp-chip__count {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.exp-chip:hover {
+  transform: translateY(-1px);
+}
+
 /* Collection detail */
 .collection-layout {
   display: grid;

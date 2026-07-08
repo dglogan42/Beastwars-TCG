@@ -1,13 +1,45 @@
+import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { CARDS, DECK_SIZE, FACTIONS, getCard } from '../data/cards';
+import {
+  CARDS,
+  DECK_SIZE,
+  FACTIONS,
+  EXPANSIONS,
+  getCard,
+  defaultDeck,
+} from '../data/cards';
 import { useDeck } from '../context/DeckContext';
 import { TradingCard } from '../components/TradingCard';
 import './pages.css';
 
-export function DeckBuilder() {
-  const { deckIds, toggleCard, resetDeck, setDeckIds } = useDeck();
+const PRESETS = [
+  { key: 'Maximal', label: 'Maximals' },
+  { key: 'Predacon', label: 'Predacons' },
+  { key: 'Autobot', label: 'Autobots' },
+  { key: 'Decepticon', label: 'Decepticons' },
+  { key: 'Vehicon', label: 'Vehicons' },
+  { key: 'BW01', label: 'Set BW01' },
+  { key: 'G1A', label: 'Set G1A' },
+  { key: 'G1D', label: 'Set G1D' },
+  { key: 'BM01', label: 'Set BM01' },
+  { key: 'ARM01', label: 'Set ARM01' },
+  { key: 'ANI01', label: 'Set ANI01' },
+];
 
-  const inDeck = deckIds.map((id) => getCard(id));
+export function DeckBuilder() {
+  const { deckIds, toggleCard, setDeckIds } = useDeck();
+  const [setFilter, setSetFilter] = useState('all');
+  const [faction, setFaction] = useState('all');
+
+  const pool = useMemo(() => {
+    return CARDS.filter((c) => {
+      if (setFilter !== 'all' && c.set !== setFilter) return false;
+      if (faction !== 'all' && c.faction !== faction) return false;
+      return true;
+    });
+  }, [setFilter, faction]);
+
+  const inDeck = deckIds.map((id) => getCard(id)).filter(Boolean);
   const totalCost = inDeck.reduce((s, c) => s + c.cost, 0);
   const avgCost = inDeck.length ? (totalCost / inDeck.length).toFixed(1) : '—';
   const full = deckIds.length >= DECK_SIZE;
@@ -19,16 +51,21 @@ export function DeckBuilder() {
           <p className="eyebrow">Strike Team Assembly</p>
           <h2>Deck Builder</h2>
           <p className="sub">
-            Choose exactly {DECK_SIZE} unique fighters. Deck is saved in this browser.
+            Choose exactly {DECK_SIZE} unique fighters from {CARDS.length} cards across{' '}
+            {EXPANSIONS.length} expansions. Deck is saved in this browser.
           </p>
         </div>
         <div className="page-header__actions">
-          <button type="button" className="btn btn--ghost" onClick={() => resetDeck('Maximal')}>
-            Maximals preset
-          </button>
-          <button type="button" className="btn btn--ghost" onClick={() => resetDeck('Predacon')}>
-            Predacons preset
-          </button>
+          {PRESETS.map((p) => (
+            <button
+              key={p.key}
+              type="button"
+              className="btn btn--ghost"
+              onClick={() => setDeckIds(defaultDeck(p.key))}
+            >
+              {p.label}
+            </button>
+          ))}
           <button type="button" className="btn btn--ghost" onClick={() => setDeckIds([])}>
             Clear
           </button>
@@ -78,9 +115,53 @@ export function DeckBuilder() {
 
       <section className="section">
         <h3>Card pool</h3>
-        <p className="hint">Click a card to add or remove it from your deck.</p>
+        <div className="toolbar" style={{ marginBottom: 12 }}>
+          <div className="chip-row">
+            <button
+              type="button"
+              className={`chip ${setFilter === 'all' ? 'is-active' : ''}`}
+              onClick={() => setSetFilter('all')}
+            >
+              All sets
+            </button>
+            {EXPANSIONS.map((e) => (
+              <button
+                key={e.code}
+                type="button"
+                className={`chip ${setFilter === e.code ? 'is-active' : ''}`}
+                style={setFilter === e.code ? { background: e.color } : undefined}
+                onClick={() => setSetFilter(e.code)}
+              >
+                {e.code}
+              </button>
+            ))}
+          </div>
+          <div className="chip-row">
+            <button
+              type="button"
+              className={`chip ${faction === 'all' ? 'is-active' : ''}`}
+              onClick={() => setFaction('all')}
+            >
+              All factions
+            </button>
+            {Object.keys(FACTIONS).map((f) => (
+              <button
+                key={f}
+                type="button"
+                className={`chip ${faction === f ? 'is-active' : ''}`}
+                style={faction === f ? { background: FACTIONS[f].color } : undefined}
+                onClick={() => setFaction(f)}
+              >
+                {f}
+              </button>
+            ))}
+          </div>
+        </div>
+        <p className="hint">
+          Showing {pool.length} cards — click to add or remove from your deck.
+        </p>
         <div className="card-grid">
-          {CARDS.map((c) => {
+          {pool.map((c) => {
             const selected = deckIds.includes(c.id);
             const lockedOut = full && !selected;
             return (

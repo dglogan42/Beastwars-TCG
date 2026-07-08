@@ -68,6 +68,11 @@ export function TradingCard({
         <div className="tcg-card__art" style={{ background: def.artBg }}>
           <Sprite name={def.sprite} className="tcg-card__sprite" />
           <span className="tcg-card__faction">{def.faction}</span>
+          {def.set && (
+            <span className="tcg-card__set">
+              {def.set}·{def.number || String(def.id).padStart(3, '0')}
+            </span>
+          )}
           <span className="tcg-card__rarity" style={{ color: rarity.color }}>
             {'★'.repeat(rarity.stars)}
           </span>
