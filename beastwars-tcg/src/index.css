@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  /* Fonts from TCG Live design tokens (Exo / PT Sans) */
+  font-family: var(--tcgl-font-body, 'PT Sans', system-ui, sans-serif);
+  background: #f5f5f5;
+  color: var(--tcgl-grey, #323232);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--tcgl-blue, #5ec1ff);
+  outline-offset: 2px;
+}
+
+/* Keep dark boards for battle/deck pages that need contrast */
+.page .battlefield,
+.page .battle-log,
+.page .prebattle__panel {
+  color: #f0f0f2;
+}

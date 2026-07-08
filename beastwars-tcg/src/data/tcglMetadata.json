@@ -1,0 +1,224 @@
+{
+  "sourceFile": "Pok\u00e9mon TCG Live.html",
+  "sourceUrl": "https://tcg.pokemon.com/en-us/tcgl/",
+  "extractedAt": "from local saved page",
+  "page": {
+    "title": "Pok\u00e9mon TCG Live",
+    "description": "Learn how to get started playing Pok\u00e9mon TCG Live and how to make the most out of your Pok\u00e9mon TCG Live experience.",
+    "ogTitle": "Pok\u00e9mon TCG Live",
+    "ogDescription": "Learn how to get started playing Pok\u00e9mon TCG Live and how to make the most out of your Pok\u00e9mon TCG Live experience.",
+    "ogImage": "https://d1i787aglh9bmb.cloudfront.net/assets/img/share/en-us/pitch-black/share_fb.jpg",
+    "twitterTitle": "Pok\u00e9mon TCG Live",
+    "themeColor": "#fff",
+    "appleMobileWebAppTitle": "The Pok\u00e9mon Trading Card Game",
+    "trackingPageType": "tcgl",
+    "env": "production",
+    "assetPath": "en-us/"
+  },
+  "designTokens": {
+    "--font-body": "\"PT Sans\", sans-serif",
+    "--font-body-tcgl": "\"Exo\", sans-serif",
+    "--font-cta": "\"Exo\", sans-serif",
+    "--font-base": "18",
+    "--font-bold": "700",
+    "--font-regular": "500",
+    "--color-light-red": "#d40f10",
+    "--color-dark-red": "#b20607",
+    "--color-dark-grey": "#eaeaea",
+    "--color-light-blue": "#5ec1ff",
+    "--color-dark-blue": "#0670b2",
+    "--color-black": "#000",
+    "--color-white": "#fff",
+    "--color-grey": "#323232",
+    "--color-light-grey": "#606060",
+    "--gradient-red": "linear-gradient( 180deg, var(--color-light-red) 2%, var(--color-dark-red) 62% )",
+    "--gradient-white": "linear-gradient( 180deg, var(--color-white) 0%, rgba(255, 255, 255, 0) 100% )",
+    "--gradient-black": "linear-gradient( 270deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.85) 100% )",
+    "--gradient-blue": "linear-gradient( 180deg, var(--color-light-blue) 0%, var(--color-dark-blue) 100% )",
+    "--gradient-black-vertical": "linear-gradient( 0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.84) 100% )",
+    "--spacing": "20px"
+  },
+  "navigation": [
+    {
+      "label": "Overview",
+      "href": "#about",
+      "track": "overview"
+    },
+    {
+      "label": "Game Modes",
+      "href": "#game-modes",
+      "track": "game modes"
+    },
+    {
+      "label": "Battle Pass",
+      "href": "#battle-pass",
+      "track": "battle pass"
+    },
+    {
+      "label": "Collection",
+      "href": "#collection",
+      "track": "collection"
+    },
+    {
+      "label": "Get Started",
+      "href": "#get-started",
+      "track": "get started"
+    },
+    {
+      "label": "System Requirements",
+      "href": "#system-requirements",
+      "track": "System Requirements"
+    }
+  ],
+  "trackingNames": [
+    "System Requirements",
+    "battle pass",
+    "redeem now",
+    "card drop rate",
+    "updates"
+  ],
+  "expansions": [
+    "30th Celebration",
+    "Mega Evolution\u2014Pitch Black",
+    "Mega Evolution\u2014Chaos Rising",
+    "Mega Evolution\u2014Perfect Order",
+    "Mega Evolution\u2014Ascended Heroes",
+    "Mega Evolution\u2014Phantasmal Flames",
+    "Mega Evolution",
+    "Scarlet & Violet\u2014Black Bolt and White Flare"
+  ],
+  "gameModes": [
+    {
+      "id": "standard",
+      "name": "Standard",
+      "description": "Battle in the Standard format featuring cards released over the last couple of years."
+    },
+    {
+      "id": "trainer-trials",
+      "name": "Trainer Trials",
+      "description": "Fun Trainer Trials with varying rulesets to keep you on your toes."
+    },
+    {
+      "id": "build-and-battle",
+      "name": "Build and Battle",
+      "description": "Emulate the experience of an in-person prerelease event."
+    },
+    {
+      "id": "private",
+      "name": "Private Battles",
+      "description": "Challenge your friends at a whim in private battles."
+    }
+  ],
+  "copy": {
+    "about": "Pok\u00e9mon TCG Live is the best way to learn how to play the Pok\u00e9mon TCG at your own pace and at no cost. You'll have access to every Pok\u00e9mon TCG card currently available in the Standard format, Learning Lab tutorials to help you learn the rules, and a variety of decks that you can try after logging in. Pok\u00e9mon TCG Live uses the same rules as the physical Pok\u00e9mon TCG so everything you learn can be applied to in-person battles too!",
+    "gameModes": "Pok\u00e9mon TCG Live makes it easy to learn new skills and new strategies, all while enjoying the heat of battle online. You can battle in the Standard format featuring cards released over the last couple of years, fun Trainer Trials with varying rulesets to keep you on your toes and Build and Battle to emulate the experience of an in-person prerelease event. You can enjoy these game modes by using online matchmaking to battle against players across the world or challenge your friends at a whim in private battles.",
+    "battlePass": "A new Battle Pass is available with the release of every new Pok\u00e9mon TCG expansion! Battle online and complete quests to unlock in-game cosmetics, booster packs, and more. Gain experience by battling and level up to earn more rewards.",
+    "collection": "Add new cards to your deck or collection! Players can redeem codes from physical Pok\u00e9mon TCG booster packs or earn booster packs from in-game expansion challenges. Players can also exchange in-game currency for individual cards, booster packs, and bundles.",
+    "getStarted": "First-time Pok\u00e9mon TCG Live players can begin by signing up for a Pok\u00e9mon Trainer Club account. From there, download Pok\u00e9mon TCG Live. When you log in the first time, the game will guide you through the setup process.",
+    "redeemPrompt": "Have a code card from a Pok\u00e9mon TCG product? Scan or type in the code to redeem it.",
+    "dropRate": "View the drop rates for Pok\u00e9mon TCG Live booster packs.",
+    "news": "Read the latest TCG Live patch notes and letters from the development team."
+  },
+  "featuredCards": [
+    {
+      "id": "8BXG_EN_13",
+      "setCode": "8BXG",
+      "number": "13",
+      "locale": "EN",
+      "image": "/tcgl/8BXG_EN_13.png",
+      "setLabel": "Featured expansion cards (8BXG)"
+    },
+    {
+      "id": "8BXG_EN_42",
+      "setCode": "8BXG",
+      "number": "42",
+      "locale": "EN",
+      "image": "/tcgl/8BXG_EN_42.png",
+      "setLabel": "Featured expansion cards (8BXG)"
+    },
+    {
+      "id": "JL2G_EN_3",
+      "setCode": "JL2G",
+      "number": "3",
+      "locale": "EN",
+      "image": "/tcgl/JL2G_EN_3.png",
+      "setLabel": "Featured expansion cards (JL2G)"
+    },
+    {
+      "id": "JL2G_EN_60",
+      "setCode": "JL2G",
+      "number": "60",
+      "locale": "EN",
+      "image": "/tcgl/JL2G_EN_60.png",
+      "setLabel": "Featured expansion cards (JL2G)"
+    },
+    {
+      "id": "JL2G_EN_95",
+      "setCode": "JL2G",
+      "number": "95",
+      "locale": "EN",
+      "image": "/tcgl/JL2G_EN_95.png",
+      "setLabel": "Featured expansion cards (JL2G)"
+    },
+    {
+      "id": "M7XJ_EN_152",
+      "setCode": "M7XJ",
+      "number": "152",
+      "locale": "EN",
+      "image": "/tcgl/M7XJ_EN_152.png",
+      "setLabel": "Featured expansion cards (M7XJ)"
+    },
+    {
+      "id": "M7XJ_EN_22",
+      "setCode": "M7XJ",
+      "number": "22",
+      "locale": "EN",
+      "image": "/tcgl/M7XJ_EN_22.png",
+      "setLabel": "Featured expansion cards (M7XJ)"
+    },
+    {
+      "id": "M7XJ_EN_91",
+      "setCode": "M7XJ",
+      "number": "91",
+      "locale": "EN",
+      "image": "/tcgl/M7XJ_EN_91.png",
+      "setLabel": "Featured expansion cards (M7XJ)"
+    }
+  ],
+  "systemRequirements": {
+    "platforms": [
+      "WINDOWS",
+      "MAC",
+      "iOS Mobile Devices",
+      "ANDROID"
+    ],
+    "windows": {
+      "minimum": {
+        "os": "Windows\u00ae 10",
+        "processor": "Intel\u00ae Pentium\u00ae D or AMD\u00ae Athlon\u2122 64 X2",
+        "memory": "3 GB RAM",
+        "storage": "3 GB available HD space"
+      },
+      "recommended": {
+        "os": "Windows\u00ae 10 64-bit",
+        "processor": "Intel\u00ae Core\u2122 2 Duo (2.2 GHz) or AMD\u00ae Athlon\u2122 64 X2 (2.6 GHz) or better",
+        "memory": "4 GB RAM",
+        "storage": "3 GB available HD space"
+      }
+    }
+  },
+  "sectionIds": [
+    {
+      "id": "battle-pass",
+      "ariaLabelledBy": "battle-pass-heading"
+    },
+    {
+      "id": "redeem",
+      "ariaLabelledBy": "get-cards-heading"
+    },
+    {
+      "id": "system-requirements",
+      "ariaLabelledBy": "system-requirements-heading"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+/* Layout + shell using tokens from Pokémon TCG Live_files/tcgl.css */
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+  color: var(--tcgl-grey, #323232);
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: #fff;
+  padding: 8px 12px;
+  z-index: 100;
+}
+.skip-link:focus {
+  left: 8px;
+  top: 8px;
+}
+
+.tcgl-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #fff;
+  border-bottom: 3px solid var(--tcgl-red, #d40f10);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tcgl-header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.tcgl-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tcgl-brand__mark {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.tcgl-brand__eyebrow {
+  display: block;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--tcgl-blue-dark, #0670b2);
+  font-family: var(--tcgl-font, Exo, sans-serif);
+  font-weight: 700;
+}
+
+.tcgl-brand__title {
+  display: block;
+  font-family: var(--tcgl-font, Exo, sans-serif);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--tcgl-grey, #323232);
+}
+
+.tcgl-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.tcgl-nav a {
+  font-family: var(--tcgl-font, Exo, sans-serif);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #5a5a5a;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.15s;
+}
+
+.tcgl-nav a:hover {
+  color: var(--tcgl-red, #d40f10);
+  background: #f5f5f5;
+}
+
+.tcgl-nav a.is-active {
+  color: #fff;
+  background: linear-gradient(
+    180deg,
+    var(--tcgl-red, #d40f10) 2%,
+    var(--tcgl-red-dark, #b20607) 62%
+  );
+}
+
+.tcgl-cta {
+  font-family: var(--tcgl-font, Exo, sans-serif);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: linear-gradient(
+    180deg,
+    var(--tcgl-blue, #5ec1ff) 0%,
+    var(--tcgl-blue-dark, #0670b2) 100%
+  );
+  box-shadow: 0 4px 12px rgba(6, 112, 178, 0.3);
+}
+
+.tcgl-cta:hover {
+  filter: brightness(1.06);
+}
+
+.app-main {
+  flex: 1;
+  width: 100%;
+}
+
+/* Pages that need a content column */
+.app-main > .page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px 20px 48px;
+}
+
+/* Full-bleed home keeps its own sections */
+.app-main > .page-home {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tcgl-footer {
+  background: #191919;
+  color: #bbb;
+  padding: 36px 20px 24px;
+  margin-top: auto;
+}
+
+.tcgl-footer__grid {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 720px) {
+  .tcgl-footer__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tcgl-footer strong {
+  display: block;
+  color: #fff;
+  font-family: var(--tcgl-font, Exo, sans-serif);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.tcgl-footer p,
+.tcgl-footer span,
+.tcgl-footer a {
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #aaa;
+  text-decoration: none;
+  margin: 4px 0;
+}
+
+.tcgl-footer a:hover {
+  color: var(--tcgl-blue, #5ec1ff);
+}
+
+.tcgl-footer code {
+  font-size: 0.8em;
+  color: #ddd;
+}
+
+.tcgl-footer__legal {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 16px;
+  border-top: 1px solid #333;
+  font-size: 0.75rem;
+  color: #777;
+  line-height: 1.5;
+  text-align: center;
+}
