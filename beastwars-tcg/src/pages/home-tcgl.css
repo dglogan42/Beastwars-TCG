@@ -247,7 +247,11 @@
 }
 
 .tcgl-section--pass {
-  background: #fff url(/tcgl/hexagon-grey.png) center / 80px repeat;
+  background: #fff;
+  background-image: var(--pass-hex, none);
+  background-position: center;
+  background-size: 80px;
+  background-repeat: repeat;
 }
 
 .tcgl-section--collection {

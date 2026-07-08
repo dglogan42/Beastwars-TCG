@@ -1,6 +1,8 @@
 import { NavLink, Outlet, Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { applyTcglTokens, mainNav, pageMeta, tcglSource } from '../data/tcgl';
+import { InstallPrompt } from './InstallPrompt';
+import { asset } from '../utils/assets';
 import './Layout.css';
 
 export function Layout() {
@@ -8,7 +10,7 @@ export function Layout() {
 
   useEffect(() => {
     applyTcglTokens();
-    document.title = `Beast Wars TCG Live · from ${pageMeta.title}`;
+    document.title = 'Beast Wars TCG Live';
   }, []);
 
   useEffect(() => {
@@ -27,9 +29,15 @@ export function Layout() {
       <header className="tcgl-header">
         <div className="tcgl-header__inner">
           <Link to="/" className="tcgl-brand">
-            <img src="/tcgl/tcg-logo.png" alt="" className="tcgl-brand__mark" width={40} height={40} />
+            <img
+              src={asset('tcgl/tcg-logo.png')}
+              alt=""
+              className="tcgl-brand__mark"
+              width={40}
+              height={40}
+            />
             <div>
-              <span className="tcgl-brand__eyebrow">Based on {pageMeta.title}</span>
+              <span className="tcgl-brand__eyebrow">Web app · {pageMeta.trackingPageType}</span>
               <span className="tcgl-brand__title">Beast Wars TCG Live</span>
             </div>
           </Link>
@@ -58,6 +66,8 @@ export function Layout() {
       <main className="app-main" id="main">
         <Outlet />
       </main>
+
+      <InstallPrompt />
 
       <footer className="tcgl-footer">
         <div className="tcgl-footer__grid">

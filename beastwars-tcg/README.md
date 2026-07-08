@@ -1,35 +1,45 @@
-# Beast Wars TCG Live
+# Beast Wars TCG Live (web app)
 
-A React trading card game reimagining **Beast Wars: Transformers** as a digital TCG, with UI/metadata inspired by Pokémon TCG Live.
+Progressive web app: **Mac · Windows · Linux · iOS · Android**.
 
-## Metadata & assets
-
-| Path | Role |
-|------|------|
-| `src/data/tcglMetadata.json` | Extracted page meta, design tokens, expansions, system requirements |
-| `src/data/tcgl.js` | App-facing API + Beast Wars section copy |
-| `public/tcgl/` | Featured gallery / hero art used on the landing page |
-
-## Features
-
-- **TCGL-style landing** — About, Game Modes, Battle Pass, Collection, Get Started, System Requirements
-- **22-card Beastdex** — Maximals / Predacons with abilities
-- **Deck builder** — 6-card decks (localStorage)
-- **Battle vs AI** — Energon, active + bench, attack / retreat / specials
-
-## Quick start
+## Local dev (any desktop)
 
 ```bash
-cd beastwars-tcg
+# from repo root
+npm install
+npm run dev
+
+# or from this folder
 npm install
 npm run dev
 ```
 
+Vite listens on all interfaces (`--host`) so phones on the same Wi‑Fi can open the **Network** URL.
+
+## Install as PWA
+
+| Device | Steps |
+|--------|--------|
+| iOS | Safari → Share → **Add to Home Screen** |
+| Android | Chrome → **Install app** |
+| Desktop | Chrome/Edge install icon in the address bar |
+
+Hosted build (GitHub Pages): `https://dglogan42.github.io/Beastwars-TCG/`
+
+## Build
+
 ```bash
-npm run build
-npm run preview
+npm run build         # base /
+npm run build:pages   # base /Beastwars-TCG/ (GitHub Pages)
+npm run preview       # serve dist/
 ```
+
+## Features
+
+- Collection, Deck Builder, Battle vs AI  
+- Offline cache via service worker  
+- Install prompt + iOS home-screen instructions  
 
 ## Credits
 
-Fan-made tribute. Pokémon TCG Live, Pokémon, and Transformers are trademarks of their respective owners. Not affiliated with The Pokémon Company, Nintendo, Hasbro, or TakaraTomy.
+Fan-made. Transformers / Pokémon trademarks belong to their owners.

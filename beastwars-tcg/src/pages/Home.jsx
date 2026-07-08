@@ -8,6 +8,7 @@ import {
 } from '../data/tcgl';
 import { CARDS } from '../data/cards';
 import { TradingCard } from '../components/TradingCard';
+import { asset } from '../utils/assets';
 import './pages.css';
 import './home-tcgl.css';
 
@@ -20,16 +21,17 @@ export function Home() {
     <div className="page-home">
       {/* Hero — mirrors TCGL header blade */}
       <section className="tcgl-hero">
-        <div className="tcgl-hero__bg" style={{ backgroundImage: 'url(/tcgl/header-fallback-medium.jpg)' }} />
+        <div
+          className="tcgl-hero__bg"
+          style={{ backgroundImage: `url(${asset('tcgl/header-fallback-medium.jpg')})` }}
+        />
         <div className="tcgl-hero__shade" />
         <div className="tcgl-hero__content">
-          <p className="tcgl-hero__eyebrow">{pageMeta.ogTitle} metadata</p>
+          <p className="tcgl-hero__eyebrow">Cross-platform web app</p>
           <h1>Beast Wars TCG Live</h1>
           <p className="tcgl-hero__lede">
-            {pageMeta.description.replace(/Pokémon TCG Live/g, 'Beast Wars TCG Live').replace(
-              /Pokémon TCG/g,
-              'Beast Wars TCG'
-            )}
+            Play in the browser on Mac, Windows, Linux, iPhone, iPad, and Android. Install to your
+            home screen for a full-screen app experience — no store required.
           </p>
           <div className="tcgl-hero__actions">
             <Link className="btn-tcgl btn-tcgl--red" to="/battle">
@@ -40,14 +42,13 @@ export function Home() {
             </Link>
           </div>
           <p className="tcgl-hero__meta">
-            Source: <code>{pageMeta.trackingPageType}</code> · theme{' '}
-            <code>{pageMeta.themeColor}</code> · tokens from tcgl.css (
-            {Object.keys(tokens).length})
+            PWA · offline-ready · {CARDS.length} cards · design tokens:{' '}
+            {Object.keys(tokens).length} · {pageMeta.trackingPageType}
           </p>
         </div>
         <div className="tcgl-hero__cards">
           {featuredCards.slice(0, 3).map((c) => (
-            <img key={c.id} src={c.image} alt={`${c.setCode} #${c.number}`} />
+            <img key={c.id} src={asset(c.image)} alt={`${c.setCode} #${c.number}`} />
           ))}
         </div>
       </section>
@@ -99,7 +100,11 @@ export function Home() {
       </section>
 
       {/* Battle Pass */}
-      <section className="tcgl-section tcgl-section--pass pattern-hex" id={battlePass.id}>
+      <section
+        className="tcgl-section tcgl-section--pass pattern-hex"
+        id={battlePass.id}
+        style={{ '--pass-hex': `url(${asset('tcgl/hexagon-grey.png')})` }}
+      >
         <div className="tcgl-wrap tcgl-split">
           <div>
             <h2 className="tcgl-h">{battlePass.heading}</h2>
@@ -110,7 +115,7 @@ export function Home() {
           </div>
           <div className="pass-art">
             {battlePass.images.map((src) => (
-              <img key={src} src={src} alt="" />
+              <img key={src} src={asset(src)} alt="" />
             ))}
           </div>
         </div>
@@ -126,7 +131,7 @@ export function Home() {
           <div className="tcgl-card-gallery">
             {featuredCards.map((c) => (
               <figure key={c.id} className="tcgl-gallery-card">
-                <img src={c.image} alt={`${c.setCode} English #${c.number}`} />
+                <img src={asset(c.image)} alt={`${c.setCode} English #${c.number}`} />
                 <figcaption>
                   {c.setCode} · #{c.number}
                 </figcaption>

@@ -11,11 +11,16 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  min-height: 100dvh;
   /* Fonts from TCG Live design tokens (Exo / PT Sans) */
   font-family: var(--tcgl-font-body, 'PT Sans', system-ui, sans-serif);
   background: #f5f5f5;
   color: var(--tcgl-grey, #323232);
   -webkit-font-smoothing: antialiased;
+  /* Safe areas for notched phones when installed as PWA */
+  padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0)
+    env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
+  touch-action: manipulation;
 }
 
 #root {

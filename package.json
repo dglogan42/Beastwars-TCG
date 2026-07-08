@@ -1,0 +1,16 @@
+{
+  "name": "beastwars-tcg-monorepo",
+  "private": true,
+  "description": "Beast Wars TCG — clone once, run the web app on any desktop OS; install as PWA on iOS/Android",
+  "scripts": {
+    "postinstall": "npm install --prefix beastwars-tcg",
+    "dev": "npm run dev --prefix beastwars-tcg",
+    "build": "npm run build --prefix beastwars-tcg",
+    "build:pages": "npm run build:pages --prefix beastwars-tcg",
+    "preview": "npm run preview --prefix beastwars-tcg",
+    "start": "npm run preview --prefix beastwars-tcg"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

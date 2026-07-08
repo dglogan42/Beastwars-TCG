@@ -5,11 +5,12 @@ import { Home } from './pages/Home';
 import { Collection } from './pages/Collection';
 import { DeckBuilder } from './pages/DeckBuilder';
 import { Battle } from './pages/Battle';
+import { routerBasename } from './utils/assets';
 
 export default function App() {
   return (
     <DeckProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={routerBasename()}>
         <Routes>
           <Route element={<Layout />}>
             <Route index element={<Home />} />
