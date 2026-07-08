@@ -10,9 +10,10 @@ Fan-made **Beast Wars: Transformers** trading card game and Beastdex, inspired b
 |------|-------------|
 | [`beastwars-tcg/`](beastwars-tcg/) | React + Vite TCG app (collection, deck builder, battle vs AI) |
 | [`index.html`](index.html) | Standalone **Beastdex** (Beast Wars cast as Pokédex entries) |
-| `Pokémon TCG Live.html` + `_files/` | Saved source used for TCGL design tokens & metadata |
-| `Pokédex _ Pokemon.com.html` + `_files/` | Saved Pokédex reference page |
+| [`LICENSE`](LICENSE) | MIT License |
 | `Beast Wars_ Transformers (cartoon) - Transformers Wiki.pdf` | Character / series reference |
+
+Extracted TCG Live design tokens and gallery assets live under `beastwars-tcg/src/data/` and `beastwars-tcg/public/tcgl/`.
 
 ## Quick start (React TCG)
 
@@ -50,7 +51,7 @@ Open `index.html` in a browser for the offline Pokédex-style catalog of Maximal
 ## Stack
 
 - React 19, Vite, React Router
-- Pure CSS (design tokens extracted from Pokémon TCG Live `tcgl.css`)
+- Pure CSS (design tokens extracted from Pokémon TCG Live)
 - No backend required
 
 ## License
@@ -64,4 +65,4 @@ Fan-made tribute only.
 **Transformers** and **Beast Wars** are trademarks of Hasbro, TakaraTomy, and related rights holders.  
 **Pokémon**, **Pokédex**, and **Pokémon TCG Live** are trademarks of Nintendo, Creatures, GAME FREAK, and/or The Pokémon Company.
 
-This project is **not** affiliated with, endorsed by, or sponsored by Hasbro, TakaraTomy, Nintendo, The Pokémon Company, or any related entity. Source HTML/assets saved for personal fan development reference only.
+This project is **not** affiliated with, endorsed by, or sponsored by Hasbro, TakaraTomy, Nintendo, The Pokémon Company, or any related entity.

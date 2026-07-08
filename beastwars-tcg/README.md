@@ -1,16 +1,14 @@
 # Beast Wars TCG Live
 
-A React trading card game reimagining **Beast Wars: Transformers** as a digital TCG, with UI/metadata driven by the saved **Pokémon TCG Live** page in this workspace.
+A React trading card game reimagining **Beast Wars: Transformers** as a digital TCG, with UI/metadata inspired by Pokémon TCG Live.
 
-## Source metadata
+## Metadata & assets
 
-| File | Role |
+| Path | Role |
 |------|------|
-| `../Pokémon TCG Live.html` | Page meta, nav, sections, expansions, system requirements |
-| `../Pokémon TCG Live_files/tcgl.css` | Design tokens (`--color-light-red`, Exo/PT Sans, gradients) |
-| `../Pokémon TCG Live_files/*_EN_*.png` | Featured gallery card art copied to `public/tcgl/` |
-| `src/data/tcglMetadata.json` | Extracted dump |
+| `src/data/tcglMetadata.json` | Extracted page meta, design tokens, expansions, system requirements |
 | `src/data/tcgl.js` | App-facing API + Beast Wars section copy |
+| `public/tcgl/` | Featured gallery / hero art used on the landing page |
 
 ## Features
 

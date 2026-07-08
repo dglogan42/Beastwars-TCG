@@ -1,16 +1,14 @@
 /**
- * Metadata extracted from the saved Pokémon TCG Live page source:
- *   ../Pokémon TCG Live.html
- *   ../Pokémon TCG Live_files/tcgl.css
+ * Metadata extracted from the Pokémon TCG Live marketing page
+ * (https://tcg.pokemon.com/en-us/tcgl/) and stored in ./tcglMetadata.json.
  *
- * Raw dump: ./tcglMetadata.json
  * Beast Wars overrides re-theme copy for this fan app while keeping
  * TCGL structure, design tokens, navigation, and featured card assets.
  */
 import raw from './tcglMetadata.json';
 
 export const tcglSource = {
-  file: raw.sourceFile,
+  file: 'tcglMetadata.json',
   url: raw.sourceUrl,
   trackingPageType: raw.page.trackingPageType,
 };

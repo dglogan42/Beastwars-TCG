@@ -1,7 +1,7 @@
 {
-  "sourceFile": "Pok\u00e9mon TCG Live.html",
+  "sourceFile": "tcglMetadata.json",
   "sourceUrl": "https://tcg.pokemon.com/en-us/tcgl/",
-  "extractedAt": "from local saved page",
+  "extractedAt": "from Pokémon TCG Live page (source HTML removed from repo)",
   "page": {
     "title": "Pok\u00e9mon TCG Live",
     "description": "Learn how to get started playing Pok\u00e9mon TCG Live and how to make the most out of your Pok\u00e9mon TCG Live experience.",
