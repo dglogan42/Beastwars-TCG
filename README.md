@@ -115,3 +115,18 @@ Open root `index.html` in a browser — no build step.
 ## Credits & disclaimer
 
 Fan-made tribute only. **Transformers** / **Beast Wars** and **Pokémon** / **Pokémon TCG Live** are trademarks of their respective owners. Not affiliated with Hasbro, TakaraTomy, Nintendo, or The Pokémon Company.
+
+## Multi-platform (web · iOS · Android · Windows · Mac · Linux)
+
+The React app in `beastwars-tcg/` is a **Progressive Web App**.
+
+| Platform | How |
+|----------|-----|
+| **Web** | Browser |
+| **iOS** | Safari → Share → Add to Home Screen |
+| **Android** | Chrome → Install app |
+| **Windows / Mac / Linux** | Chrome/Edge → Install |
+
+```bash
+cd beastwars-tcg && npm install && npm run dev
+```
