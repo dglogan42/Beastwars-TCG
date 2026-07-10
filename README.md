@@ -130,3 +130,7 @@ The React app in `beastwars-tcg/` is a **Progressive Web App**.
 ```bash
 cd beastwars-tcg && npm install && npm run dev
 ```
+
+## Media policy
+
+Card gallery and logos are **original unlicensed fan art**. No Pokémon TCG Live assets, official product scans, or Transformers Wiki dumps are shipped.

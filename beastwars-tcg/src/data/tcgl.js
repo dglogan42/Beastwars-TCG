@@ -1,9 +1,6 @@
 /**
- * Metadata extracted from the Pokémon TCG Live marketing page
- * (https://tcg.pokemon.com/en-us/tcgl/) and stored in ./tcglMetadata.json.
- *
- * Beast Wars overrides re-theme copy for this fan app while keeping
- * TCGL structure, design tokens, navigation, and featured card assets.
+ * Fan TCG site structure + original unlicensed card art (./tcglMetadata.json).
+ * No Pokémon Company / Hasbro / official TCG marketing assets are bundled.
  */
 import raw from './tcglMetadata.json';
 
@@ -49,7 +46,7 @@ export const siteSections = {
     heading: 'Game Modes',
     intro:
       'Beast Wars TCG Live makes it easy to learn new skills and strategies while enjoying the heat of battle. ' +
-      'Use the modes below — inspired by the Pokémon TCG Live page structure — then jump into a live duel.',
+      'Use the modes below — pick a mode below — then jump into a live duel.',
     modes: [
       {
         id: 'standard',
@@ -86,7 +83,7 @@ export const siteSections = {
     heading: 'Battle Pass',
     body:
       'A new Battle Pass tracks with each Beastdex expansion drop. Complete duel quests to unlock cosmetics, boosters, and more. ' +
-      'Gain experience by battling and level up for rewards — same cadence as Pokémon TCG Live expansions on the source page.',
+      'Gain experience by battling and level up for rewards — same seasonal cadence as a typical digital TCG battle pass.',
     cta: { label: 'Enter Battle', route: '/battle' },
     images: ['/tcgl/battle-pass-cards-1.png', '/tcgl/battle-pass-cards-2.png'],
   },
@@ -95,7 +92,7 @@ export const siteSections = {
     heading: 'Build Your Card Collection',
     body:
       'Add new cards to your deck or collection! Browse the full Beastdex archive, filter by faction, and inspect ability text. ' +
-      'Featured physical TCG art below is pulled from the saved Pokémon TCG Live page assets for gallery atmosphere.',
+      'Featured card art below is original fan graphics — no official TCG product images.',
     redeemPrompt: raw.copy.redeemPrompt.replace(/Pokémon TCG/g, 'Beast Wars TCG'),
     cta: { label: 'Open Collection', route: '/collection' },
   },

@@ -1,19 +1,19 @@
 {
   "sourceFile": "tcglMetadata.json",
-  "sourceUrl": "https://tcg.pokemon.com/en-us/tcgl/",
-  "extractedAt": "from Pokémon TCG Live page (source HTML removed from repo)",
+  "sourceUrl": "",
+  "extractedAt": "structure only \u2014 original fan art; no Pok\u00e9mon TCG media",
   "page": {
-    "title": "Pok\u00e9mon TCG Live",
-    "description": "Learn how to get started playing Pok\u00e9mon TCG Live and how to make the most out of your Pok\u00e9mon TCG Live experience.",
-    "ogTitle": "Pok\u00e9mon TCG Live",
-    "ogDescription": "Learn how to get started playing Pok\u00e9mon TCG Live and how to make the most out of your Pok\u00e9mon TCG Live experience.",
-    "ogImage": "https://d1i787aglh9bmb.cloudfront.net/assets/img/share/en-us/pitch-black/share_fb.jpg",
-    "twitterTitle": "Pok\u00e9mon TCG Live",
-    "themeColor": "#fff",
-    "appleMobileWebAppTitle": "The Pok\u00e9mon Trading Card Game",
-    "trackingPageType": "tcgl",
-    "env": "production",
-    "assetPath": "en-us/"
+    "title": "Beast Wars TCG Live (fan)",
+    "description": "Fan TCG practice app with original unlicensed card art.",
+    "ogTitle": "Beast Wars TCG Live (fan)",
+    "ogDescription": "Original fan art only. Not affiliated with Hasbro, Takara, or The Pok\u00e9mon Company.",
+    "ogImage": "/tcgl/header-fallback-medium.jpg",
+    "twitterTitle": "Beast Wars TCG Live (fan)",
+    "themeColor": "#1a2030",
+    "appleMobileWebAppTitle": "Beast Wars TCG Fan",
+    "trackingPageType": "fan-tcg",
+    "env": "fan",
+    "assetPath": "tcgl/"
   },
   "designTokens": {
     "--font-body": "\"PT Sans\", sans-serif",
